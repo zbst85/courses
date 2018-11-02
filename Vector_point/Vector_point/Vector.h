@@ -1,4 +1,5 @@
 #pragma once
+
 class Vector
 {
 private: 
@@ -14,6 +15,8 @@ public:
 	~Vector();
 
 	Vector MultiplyVect(Vector&, int);
+	
+	void VectLen1(Vector&);
 
 friend Vector operator+ (Vector&, Vector&);
 

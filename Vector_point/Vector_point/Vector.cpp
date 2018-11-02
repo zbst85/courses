@@ -20,6 +20,15 @@ Vector Vector::MultiplyVect(Vector& v1, int x)
 	return v1;
 }
 
+
+
+void Vector::VectLen1(Vector &v)
+{
+	double len;
+	len = sqrt((v.A.getCoorX() - v.B.getCoorX())*(v.A.getCoorX() - v.B.getCoorX()) + (v.A.getCoorY() - v.B.getCoorY())*(v.A.getCoorY() - v.B.getCoorY()));
+	cout << "Vector lenght is  " << len << '\n';
+}
+
 Vector operator + (Vector& v1, Vector& v2)
 {
 	Vector v3;
