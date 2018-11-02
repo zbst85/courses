@@ -12,5 +12,6 @@ public:
 	virtual ~Point();
 	friend ostream& operator << (ostream&, Point&);
 	friend istream& operator >> (istream&, Point&);
+	friend Point operator * (Point&, int);
 };
 
