@@ -18,6 +18,15 @@ ostream & operator<<(ostream &obj, Point &p)
 
 istream& operator>>(istream &obj, Point &p)
 {
+	
 	obj >> p.name >> p.x >> p.y;
 	return obj;
+}
+
+Point operator*(Point &p, int a)
+{
+	p.x = p.x*a;
+	p.y = p.y*a;
+	
+	return p;
 }
